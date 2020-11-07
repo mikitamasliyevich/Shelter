@@ -1,0 +1,93 @@
+.pets-header {
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+}
+
+.menu {
+  width: 443px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 9px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 400;
+  margin-left: -5px;
+}
+
+.logo__title {
+  color: #F1CDB3;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.logo__subtitle {
+  margin-top: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 110%;
+  letter-spacing: 0.1em;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+}
+
+.list .list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list .list__item .list__link {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.list .list__item .list__link_active {
+  border-bottom: solid 0.3rem #F1CDB3;
+}
+
+.list .list__item .list__link_disabled {
+  color: #CDCDCD;
+}
+/*# sourceMappingURL=pets.css.map */

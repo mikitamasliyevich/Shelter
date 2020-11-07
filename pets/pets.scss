@@ -1,0 +1,176 @@
+$color-primary-color: #F1CDB3;
+$color-primary-light: #FDDCC4;
+
+$color-light-s: #FAFAFA;
+$color-light-l: #F6F6F6;
+$color-light-xl: #FFFFFF;
+
+$color-dark-s:#CDCDCD;
+$color-dark-m:#B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #4444;
+$color-dark-3xl: #292929;
+
+$start-screen-gradient-background: url(../main/assets/noise_transparent.png),
+radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+#211F20;
+
+$footer-gradient-background: url(noise_lines_transparent@2X.png),
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
+#211F20;
+
+@mixin h2 {
+    font: {
+        family: Georgia;
+        size: 44px;
+        weight: normal;
+    }
+
+    line-height: 130%;
+}
+
+@mixin h3 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 35px;
+    }
+
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h4 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 20px;
+    }
+
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h5 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 15px;
+    }
+
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+@mixin paragraph-l {
+    font: {
+        family: Arial;
+        style: normal;
+        weight: normal;
+        size: 15px;
+    }
+
+    line-height: 160%;
+}
+
+@mixin paragraph-s {
+    font: {
+        family: Arial;
+        style: italic;
+        weight: normal;
+        size: 12px;
+    }
+
+    line-height: 150%;
+}
+
+@mixin logo_title {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 32px;
+    }
+
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+@mixin logo_subtitle {
+    font: {
+        family: Arial;
+        style: normal;
+        weight: normal;
+        size: 13px;
+    }
+
+    line-height: 110%;
+    letter-spacing: 0.1em;
+}
+
+
+.pets-header {
+    width: 100vw;
+    position: sticky;
+    top: 60px;
+}
+
+.menu {
+    width: 443px;
+    display: flex;
+    margin-right: 9px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin-left: -5px;
+
+    &__title {
+        color: $color-primary-color;
+        @include logo_title()
+    }
+
+    &__subtitle {
+        margin-top: 10px;
+        text-align: center;
+        color: $color-light-xl;
+        @include logo_subtitle()
+    }
+}
+
+.menu {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+
+
+    .list__item {
+        display: flex;
+        align-items: center;
+
+        .list__link {
+            color: $color-light-xl;
+            font-weight: 400;
+            @include paragraph-l();
+
+            &_active {
+                border-bottom: solid 0.3rem $color-primary-color;
+            }
+
+            &_disabled {
+                color: $color-dark-s;
+            }
+        }
+    }
+}
